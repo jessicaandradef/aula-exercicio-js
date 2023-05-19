@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*Cria uma função que:
+      - Aceite 2 argumentos: preço e desconto;
+      - Se o desconto for menor que 10%, retorna o valor mais o desconto;
+      - Se o desconto for maior que 10% mas inferior a 30%, retorna o valor menos o desconto;
+      - Se o desconto for 0, retorna a mult
+      iplicação do valor por 2*/
+
+      function valorFinal(preco, desconto) {
+        if (desconto === 0) {
+          return preco * 2;
+        } else if (desconto < 0.1) {
+          return preco - preco * desconto;
+        } else if (desconto >= 0.1 && desconto < 0.3) {
+          return preco - preco * desconto;
+        }
+      }
+      console.log(valorFinal(100, 0.15));
+    </script>
+  </body>
+</html>

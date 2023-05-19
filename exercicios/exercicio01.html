@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
+      const paises = [
+        "Albânia",
+        "Bolívia",
+        "Canadá",
+        "Dinamarca",
+        "Etiópia",
+        "Finlândia",
+        "Alemanha",
+        "Hungria",
+        "Irlanda",
+        "Japão",
+        "Quênia",
+      ];
 
-        const paises = ['Albânia', 'Bolívia', 'Canadá', 'Dinamarca', 'Etiópia', 'Finlândia', 'Alemanha', 'Hungria', 'Irlanda', 'Japão', 'Quênia']
+      //Cria um ciclo que faça console.log de cada um dos países;
 
-        //exercicio 1
+      for (let i = 0; i < paises.length; i++) {
+        console.log(paises[i]);
+      }
 
-        for (let i = 0; i < paises.length; i++) {
-            console.log(paises[i])
-        }
+      //Faz console.log do número de itens do array países;
 
-        //exercicio 2
+      console.log(paises.length);
 
-        console.log(paises.length)
+      //exercicio 3
 
-        //exercicio 3
+      paises.unshift("Portugal");
+      console.log(paises);
 
-        console.log(paises.unshift('Portugal'))
-        console.log(paises)
+      //exercicio 4
 
-        //exercicio 4
+      paises.push("Espanha");
+      console.log(paises);
 
-        console.log(paises.push('Espanha'))
-        console.log(paises)
+      //exercicio 5
 
-        //exercicio 5
+      function mostrarUltimosPaises() {
+        console.log(paises.slice(-3));
+      }
+      mostrarUltimosPaises();
 
-        function mostrarUltimosPaises() {
-            return paises.s
-        }
+      //exercicio 6
 
-        //exercicio 6
-
-        const arraySeparado = paises.join("-");
-        console.log(arrayString);
-
-
+      console.log(paises.join(" - "));
     </script>
-</body>
-
+  </body>
 </html>
